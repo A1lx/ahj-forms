@@ -1,4 +1,5 @@
 export default class PopoverBuilder {
+  // eslint-disable-next-line
   build() {
     const popoverElem = document.createElement('div');
     popoverElem.classList.add('popover-elem');

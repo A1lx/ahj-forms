@@ -7,17 +7,6 @@ export default class Popover {
     this.show = false;
   }
 
-  // showPopover() {
-  //   document.body.appendChild(this.popoverElem);
-  //   this.position.getPosition(this.popoverElem, this.buttonElem);
-  //   this.show = true;
-  // }
-
-  // removePopover() {
-  //   this.popoverElem.remove();
-  //   this.show = false;
-  // }
-
   togglePopover() {
     if (!this.show) {
       document.body.appendChild(this.popoverElem);
@@ -26,6 +15,6 @@ export default class Popover {
     } else {
       this.popoverElem.remove();
       this.show = false;
-    } 
+    }
   }
 }

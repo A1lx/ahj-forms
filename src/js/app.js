@@ -1,6 +1,6 @@
-import Popover from "./Popover";
-import PopoverBuilder from "./PopoverBuilder";
-import PopoverPosition from "./PopoverPosition";
+import Popover from './Popover';
+import PopoverBuilder from './PopoverBuilder';
+import PopoverPosition from './PopoverPosition';
 
 const buttonElem = document.querySelector('.btn');
 
