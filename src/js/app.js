@@ -1,12 +1,15 @@
 import Popover from "./Popover";
+import PopoverBuilder from "./PopoverBuilder";
+import PopoverPosition from "./PopoverPosition";
 
-const btn = document.querySelector('.btn');
+const buttonElem = document.querySelector('.btn');
 
+const builder = new PopoverBuilder();
+const position = new PopoverPosition();
+const newPopover = new Popover(builder, position, buttonElem);
 
-btn.addEventListener('click', (e) => {
-  e.preventDefault();
+function handler() {
+  newPopover.togglePopover();
+}
 
-  const newPopover = new Popover('.btn');
-  //                 new Popover(builder?, position?, buttonSelector)
-  newPopover.showPopover();
-});
+buttonElem.addEventListener('click', handler.bind(Popover));
